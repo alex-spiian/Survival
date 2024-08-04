@@ -5,12 +5,11 @@ using VContainer;
 
 namespace Player
 {
-    [RequireComponent(typeof(PlayerAnimationHandler))]
     public class Player : MonoBehaviour
     {
         [SerializeField] private float _speed;
-
-        private PlayerAnimationHandler _animationHandler;
+        [SerializeField] private PlayerAnimationHandler _animationHandler;
+        
         private MovementController _movementController;
         private IInputHandler _inputHandler;
 
@@ -19,7 +18,6 @@ namespace Player
         private void Start()
         {
             _movementController = new MovementController();
-            _animationHandler = GetComponent<PlayerAnimationHandler>();
         }
 
         [Inject]

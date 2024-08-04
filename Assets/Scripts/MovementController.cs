@@ -4,8 +4,8 @@ namespace DefaultNamespace
 {
     public class MovementController
     {
-        private float _leftSide = 1;
-        private float _rightSide = -1;
+        private float _leftSide = -1;
+        private float _rightSide = 1;
         
         public float Move(Vector2 input, Transform transform, float speed)
         {
