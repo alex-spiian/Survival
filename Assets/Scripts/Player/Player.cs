@@ -13,8 +13,6 @@ namespace Player
         private MovementController _movementController;
         private IInputHandler _inputHandler;
 
-        private bool _canMove;
-
         private void Start()
         {
             _movementController = new MovementController();
@@ -24,12 +22,10 @@ namespace Player
         public void Construct(IInputHandler inputHandler)
         {
             _inputHandler = inputHandler;
-            _canMove = true;
         }
 
         private void FixedUpdate()
         {
-            if (!_canMove) return;
             var input = _inputHandler.GetInput();
             var currentSpeed = _movementController.Move(input, transform, _speed);
             _animationHandler.HandleAnimations(currentSpeed);

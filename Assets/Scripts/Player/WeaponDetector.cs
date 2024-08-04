@@ -1,14 +1,22 @@
 using FoundItem;
+using UniTaskPubSub;
 using UnityEngine;
+using VContainer;
 using Weapons;
 
 namespace Player
 {
     public class WeaponDetector : MonoBehaviour
     {
+        private IAsyncPublisher _publisher;
+
+        [Inject]
+        public void Construct(IAsyncPublisher publisher)
+        {
+            _publisher = publisher;
+        }
         private void OnTriggerEnter2D(Collider2D collider)
         {
-            Debug.Log("OnTriggerEnter2D");
             if (collider.TryGetComponent<Weapon>(out var weapon))
             {
                 ScreensManager.OpenScreen<FoundItemScreen, FoundItemContext>(new FoundItemContext(weapon.WeaponConfig, weapon));
@@ -17,10 +25,9 @@ namespace Player
 
         private void OnTriggerExit2D(Collider2D collider)
         {
-            Debug.Log("OnTriggerExit2D");
             if (collider.TryGetComponent<Weapon>(out var weapon))
             {
-                ScreensManager.CloseScreen<FoundItemScreen>();
+                _publisher.PublishAsync(new FoundItemScreenClosedEvent());
             }
         }
     }
