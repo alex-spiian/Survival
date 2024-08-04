@@ -35,7 +35,6 @@ namespace Player
             var input = _inputHandler.GetInput();
             var currentSpeed = _movementController.Move(input, transform, _speed);
             _animationHandler.HandleAnimations(currentSpeed);
-            Debug.Log(currentSpeed);
         }
     }
 }
