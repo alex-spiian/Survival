@@ -1,5 +1,7 @@
 using System;
 using System.Collections.Generic;
+using Battle;
+using FoundItem;
 using ScreenManager.Enums;
 using ScreenManager.Interfaces;
 using ScreenManager.Loaders.Scenes;
@@ -14,7 +16,9 @@ public class SceneScreenSettingsProvider : IScreenSettingsProvider, IDisposable
     public SceneScreenSettingsProvider()
     {
         AddScreenSettings(ScreenId.None, "None");
-        
+        AddScreenSettings(typeof(BattleScreen), "Battle");
+        AddScreenSettings(typeof(FoundItemScreen), "FoundItemPopUp");
+
         _subscriptions = new CompositeDisposable
         {
             EventStreams.Game.Subscribe<RegisterNewScreenEvent>(RegisterNewScreenHandler),

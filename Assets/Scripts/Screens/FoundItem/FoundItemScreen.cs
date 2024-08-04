@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using VContainer;
 
-namespace FoundItemScreen
+namespace FoundItem
 {
     public class FoundItemScreen : UIScreen<FoundItemContext>
     {

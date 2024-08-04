@@ -1,6 +1,6 @@
 using Weapons;
 
-namespace FoundItemScreen
+namespace FoundItem
 {
     public struct WeaponPickedUpEvent
     {
