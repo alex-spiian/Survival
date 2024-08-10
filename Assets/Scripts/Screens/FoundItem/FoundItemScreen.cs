@@ -1,8 +1,8 @@
-using System;
 using Cysharp.Threading.Tasks;
 using DG.Tweening;
 using JetBrains.Annotations;
 using ScreenManager.Core;
+using Screens.Inventory;
 using SimpleEventBus.Disposables;
 using UniTaskPubSub;
 using UnityEngine;
@@ -32,6 +32,7 @@ namespace FoundItem
             _context = context;
             _tooltip.Initialize(_context.ItemConfig);
             OpenSmoothly();
+            ScreensManager.CloseScreen<InventoryScreen>();
         }
 
         [Inject]
