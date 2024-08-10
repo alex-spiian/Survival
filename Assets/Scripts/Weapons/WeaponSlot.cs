@@ -10,6 +10,7 @@ namespace Weapons
         public void SetWeapon(Weapon weapon)
         {
             weapon.transform.SetParent(transform);
+            weapon.transform.localPosition = Vector3.zero;
             weapon.transform.rotation = Quaternion.identity;
             weapon.OnWeaponPickedUp();
             CurrentWeapon = weapon;
