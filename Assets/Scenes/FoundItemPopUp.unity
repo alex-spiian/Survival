@@ -522,6 +522,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2639394527d64e36b1c3b4b80f1f975a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _fadeDuration: 0.5
+  _scaleDuration: 0.2
+  _maxTransparencyValue: 0.9
   _background: {fileID: 304643647}
   _tooltip: {fileID: 1327433635}
   _pickUpButton: {fileID: 1673216893}
@@ -1014,7 +1017,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parentReference:
-    TypeName: GameLifetimeScope
+    TypeName: RootLifetimeScope
   autoRun: 1
   autoInjectGameObjects:
   - {fileID: 1144413958}

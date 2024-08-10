@@ -1,3 +1,4 @@
+using Cysharp.Threading.Tasks;
 using FoundItem;
 using UniTaskPubSub;
 using UnityEngine;
@@ -27,7 +28,7 @@ namespace Player
         {
             if (collider.TryGetComponent<Weapon>(out var weapon))
             {
-                _publisher.PublishAsync(new FoundItemScreenClosedEvent());
+                _publisher.Publish(new FoundItemScreenClosedEvent());
             }
         }
     }

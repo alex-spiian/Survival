@@ -1,5 +1,4 @@
 using InputHandler;
-using UniTaskPubSub;
 using VContainer;
 using VContainer.Unity;
 
@@ -9,9 +8,5 @@ public class GameLifetimeScope : LifetimeScope
     {
         builder.Register<StandaloneInputHandler>(Lifetime.Singleton)
             .AsImplementedInterfaces();
-        
-        builder.Register<AsyncMessageBus>(Lifetime.Singleton)
-            .AsImplementedInterfaces()
-            .AsSelf();
     }
 }
