@@ -20,6 +20,7 @@ namespace Player
         {
             if (collider.TryGetComponent<Weapon>(out var weapon))
             {
+                Debug.Log("OnTriggerEnter2D " + collider.gameObject);
                 ScreensManager.OpenScreen<FoundItemScreen, FoundItemContext>(new FoundItemContext(weapon.WeaponConfig, weapon));
             }
         }
@@ -28,6 +29,7 @@ namespace Player
         {
             if (collider.CompareTag(GlobalConstants.WEAPON_TAG))
             {
+                Debug.Log("OnTriggerExit2D " + collider.gameObject);
                 _publisher.Publish(new FoundItemScreenClosedEvent());
             }
         }
