@@ -8,15 +8,16 @@ namespace Weapons
         [SerializeField]
         private WeaponSlot[] _weaponSlots;
 
-        public void SetWeapon(Weapon weapon)
+        public bool TrySetWeapon(Weapon weapon)
         {
             if (CanPickUp())
             {
                 var slot = GetFreeSlot();
                 slot.SetWeapon(weapon);
-                return;
+                return true;
             }
 
+            return false;
             // event there are no free slots
         }
 
