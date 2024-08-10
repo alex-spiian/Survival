@@ -26,7 +26,7 @@ namespace Player
 
         private void OnTriggerExit2D(Collider2D collider)
         {
-            if (collider.TryGetComponent<Weapon>(out var weapon))
+            if (collider.CompareTag(GlobalConstants.WEAPON_TAG))
             {
                 _publisher.Publish(new FoundItemScreenClosedEvent());
             }
