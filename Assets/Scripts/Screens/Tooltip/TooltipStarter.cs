@@ -1,29 +1,52 @@
+using Cysharp.Threading.Tasks;
+using JetBrains.Annotations;
 using UnityEngine;
-using UnityEngine.EventSystems;
 
 namespace Screens.Tooltip
 {
     // put this component on an object you want to display a tooltip
-    public class TooltipStarter : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+    [RequireComponent(typeof(IItem))]
+    public class TooltipStarter : MonoBehaviour
     {
         [SerializeField]
         private TooltipType _tooltipType;
         
         private IItem _item;
+        private bool _isTooltipOpen;
+
         private void Awake()
         {
             _item = GetComponent<IItem>();
         }
         
-        public void OnPointerEnter(PointerEventData eventData)
+        private async void Update()
+        {
+            if (_isTooltipOpen && Input.GetMouseButtonDown(0))
+            {
+                if (!IsPointerOverThisElement())
+                {
+                    await UniTask.Delay(500);
+                    ScreensManager.CloseScreen<TooltipScreen>();
+                    _isTooltipOpen = false;
+                }
+            }
+        }
+        
+        [UsedImplicitly]
+        public void OnPointerClick()
         {
             ScreensManager.OpenScreen<TooltipScreen, TooltipContext>
                 (new TooltipContext(_item.ItemConfig, _item.Transform as RectTransform, _tooltipType));
+            _isTooltipOpen = true;
         }
-
-        public void OnPointerExit(PointerEventData eventData)
+        
+        private bool IsPointerOverThisElement()
         {
-            ScreensManager.CloseScreen<TooltipScreen>();
+            return RectTransformUtility.RectangleContainsScreenPoint(
+                _item.Transform as RectTransform, 
+                Input.mousePosition, 
+                Camera.main
+            );
         }
     }
 }

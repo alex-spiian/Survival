@@ -22,6 +22,7 @@ namespace Weapons
             _publisher = publisher;
             _inventory = inventory;
             _subscriptions.Add(subscriber.Subscribe<WeaponPickedUpEvent>(OnWeaponPickedUp));
+            _subscriptions.Add(subscriber.Subscribe<WeaponDroppedEvent>(OnWeaponDropped));
         }
 
         private void OnWeaponPickedUp(WeaponPickedUpEvent eventData)
@@ -33,6 +34,12 @@ namespace Weapons
             }
             
             _publisher.Publish(new InventoryIsFullEvent());
+        }
+
+        private void OnWeaponDropped(WeaponDroppedEvent eventData)
+        {
+            _weaponHolder.RemoveWeapon(eventData.WeaponConfig);
+            _inventory.RemoveWeapon(eventData.WeaponConfig);
         }
 
         private void OnDisable()

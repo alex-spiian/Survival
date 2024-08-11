@@ -1,4 +1,5 @@
 using System.Linq;
+using Item;
 using UnityEngine;
 
 namespace Weapons
@@ -17,6 +18,12 @@ namespace Weapons
                 return true;
             }
             return false;
+        }
+
+        public void RemoveWeapon(WeaponConfig weaponConfig)
+        {
+            var neededSlot = _weaponSlots.FirstOrDefault(weapon => weapon.CurrentWeapon.WeaponConfig.Name == weaponConfig.Name);
+            neededSlot.RemoveWeapon();
         }
 
         private bool CanPickUp()

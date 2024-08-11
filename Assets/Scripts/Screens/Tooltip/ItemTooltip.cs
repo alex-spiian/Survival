@@ -17,19 +17,20 @@ namespace Screens.Tooltip
             _tooltipRectTransform = GetComponent<RectTransform>();
         }
 
-        public void Initialize(ItemConfig itemConfig, RectTransform rectTransform)
+        public virtual void Initialize(ItemConfig itemConfig, RectTransform rectTransform)
         {
             SetValue(itemConfig);
-            SetPosition(rectTransform);
+            var offset = Vector2.zero;
+            SetPosition(rectTransform, offset);
         }
 
-        private void SetValue(ItemConfig itemConfig)
+        protected virtual void SetValue(ItemConfig itemConfig)
         {
             _name.text = itemConfig.Name.ToUpper();
             _icon.sprite = itemConfig.Icon;
         }
 
-        private void SetPosition(RectTransform itemRectTransform)
+        protected void SetPosition(RectTransform itemRectTransform, Vector2 offset)
         {
             // for canvas render mode "Screen Space - Camera" you must provide the right camera you need
             var screenPoint = RectTransformUtility.WorldToScreenPoint(null, itemRectTransform.position);
@@ -37,7 +38,6 @@ namespace Screens.Tooltip
             RectTransformUtility.ScreenPointToLocalPointInRectangle(
                 _tooltipRectTransform.parent as RectTransform, screenPoint, null, out var positionOnCanvas);
 
-            var offset = new Vector2(itemRectTransform.sizeDelta.x / 2, 0f);
             _tooltipRectTransform.anchoredPosition = positionOnCanvas + offset;
         }
     }

@@ -20,5 +20,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PopUpWarning.unity
     guid: 5d9b59910d4cb4f3f988bbddeea50cee
+  - enabled: 1
+    path: Assets/Scenes/Tooltip.unity
+    guid: 032c5fa488129413387c395f530ffb2f
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
