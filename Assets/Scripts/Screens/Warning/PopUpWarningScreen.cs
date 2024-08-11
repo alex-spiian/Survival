@@ -1,5 +1,6 @@
 using Cysharp.Threading.Tasks;
 using DG.Tweening;
+using JetBrains.Annotations;
 using ScreenManager.Core;
 using UnityEngine;
 using UnityEngine.UI;
@@ -23,6 +24,7 @@ namespace Screens.Warning
             OpenSmoothly();
         }
 
+        [UsedImplicitly]
         public override async void CloseScreen()
         {
             FadeImageSmoothly(0f);

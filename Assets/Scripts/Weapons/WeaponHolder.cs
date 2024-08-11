@@ -16,9 +16,7 @@ namespace Weapons
                 slot.SetWeapon(weapon);
                 return true;
             }
-
             return false;
-            // event there are no free slots
         }
 
         private bool CanPickUp()
