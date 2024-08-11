@@ -1,6 +1,6 @@
 using Item;
 
-namespace Screens.Tooltip
+namespace Screens
 {
     public interface ITooltip
     {

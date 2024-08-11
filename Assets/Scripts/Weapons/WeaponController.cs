@@ -1,5 +1,6 @@
 using FoundItem;
 using Inventory;
+using Screens.Inventory.Events;
 using SimpleEventBus.Disposables;
 using UniTaskPubSub;
 using UnityEngine;
@@ -13,12 +14,15 @@ namespace Weapons
         private WeaponHolder _weaponHolder;
         private readonly CompositeDisposable _subscriptions = new();
         private InventoryModel _inventory;
+        private IAsyncPublisher _publisher;
 
         [Inject]
-        public void Construct(IAsyncSubscriber subscriber, InventoryModel inventory)
+        public void Construct(IAsyncSubscriber subscriber, IAsyncPublisher publisher, InventoryModel inventory)
         {
+            _publisher = publisher;
             _inventory = inventory;
             _subscriptions.Add(subscriber.Subscribe<WeaponPickedUpEvent>(OnWeaponPickedUp));
+            _subscriptions.Add(subscriber.Subscribe<WeaponDroppedEvent>(OnWeaponDropped));
         }
 
         private void OnWeaponPickedUp(WeaponPickedUpEvent eventData)
@@ -26,7 +30,16 @@ namespace Weapons
             if (_weaponHolder.TrySetWeapon(eventData.Weapon))
             {
                 _inventory.AddWeapon(eventData.Weapon);
+                return;
             }
+            
+            _publisher.Publish(new InventoryIsFullEvent());
+        }
+
+        private void OnWeaponDropped(WeaponDroppedEvent eventData)
+        {
+            _weaponHolder.RemoveWeapon(eventData.WeaponConfig);
+            _inventory.RemoveWeapon(eventData.WeaponConfig);
         }
 
         private void OnDisable()

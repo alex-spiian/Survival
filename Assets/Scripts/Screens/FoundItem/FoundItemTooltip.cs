@@ -1,5 +1,5 @@
 using Item;
-using Screens.Tooltip;
+using Screens;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;

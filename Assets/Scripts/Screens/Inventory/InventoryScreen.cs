@@ -11,7 +11,7 @@ namespace Screens.Inventory
         
         [SerializeField]
         private InventoryItem _inventoryItemPrefab;
-        
+
         public override void Initialize(InventoryContext context)
         {
             GenerateInventory(context.InventoryModel);
@@ -24,7 +24,7 @@ namespace Screens.Inventory
             foreach (var weapon in weapons)
             {
                 var inventoryItem = Instantiate(_inventoryItemPrefab, _itemsContainer);
-                inventoryItem.Initialize(weapon.WeaponConfig.Icon);
+                inventoryItem.Initialize(weapon.WeaponConfig);
             }
         }
     }

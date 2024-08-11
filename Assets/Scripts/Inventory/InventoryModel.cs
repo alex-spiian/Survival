@@ -1,4 +1,6 @@
 using System.Collections.Generic;
+using System.Linq;
+using Item;
 using Weapons;
 
 namespace Inventory
@@ -10,6 +12,12 @@ namespace Inventory
         public void AddWeapon(Weapon weapon)
         {
             Weapons.Add(weapon);
+        }
+        
+        public void RemoveWeapon(WeaponConfig weaponConfig)
+        {
+            var weapon = Weapons.FirstOrDefault(weapon => weapon.WeaponConfig.Name == weaponConfig.Name);
+            Weapons.Remove(weapon);
         }
     }
 }

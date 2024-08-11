@@ -1,4 +1,5 @@
 using System.Linq;
+using Item;
 using UnityEngine;
 
 namespace Weapons
@@ -16,9 +17,13 @@ namespace Weapons
                 slot.SetWeapon(weapon);
                 return true;
             }
-
             return false;
-            // event there are no free slots
+        }
+
+        public void RemoveWeapon(WeaponConfig weaponConfig)
+        {
+            var neededSlot = _weaponSlots.FirstOrDefault(weapon => weapon.CurrentWeapon.WeaponConfig.Name == weaponConfig.Name);
+            neededSlot.RemoveWeapon();
         }
 
         private bool CanPickUp()
