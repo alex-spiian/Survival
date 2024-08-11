@@ -151,6 +151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86694d9a9e6142fda702ba58ee32b43d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _inventoryButton: {fileID: 411485274}
 --- !u!114 &21700004
 MonoBehaviour:
   m_ObjectHideFlags: 0

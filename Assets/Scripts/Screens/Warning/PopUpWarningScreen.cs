@@ -17,11 +17,13 @@ namespace Screens.Warning
         [Header("Components")]
         [SerializeField] private WarningMessage _warningMessage;
         [SerializeField] private Image _background;
+        [SerializeField] private Transform _arrowPointer;
 
         public override void Initialize(PopUpWarningContext context)
         {
             _warningMessage.Initialize(context.Header, context.Content);
             OpenSmoothly();
+            SetArrowPointer(context.ObjectToPayAttention.position);
         }
 
         [UsedImplicitly]
@@ -29,10 +31,15 @@ namespace Screens.Warning
         {
             FadeImageSmoothly(0f);
             ScaleSmoothly(_warningMessage.transform, Vector3.zero);
+            ScaleSmoothly(_arrowPointer, Vector3.zero);
             await UniTask.WaitForSeconds(_fadeDuration);
             base.CloseScreen();
         }
-        
+
+        private void SetArrowPointer(Vector3 position)
+        {
+            _arrowPointer.position = position;
+        }
         private void OpenSmoothly()
         {
             FadeImageSmoothly(_maxTransparencyValue);
