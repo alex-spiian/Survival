@@ -44,6 +44,7 @@ namespace Screens.Warning
         {
             FadeImageSmoothly(_maxTransparencyValue);
             ScaleSmoothly(_warningMessage.transform, Vector3.one);
+            ScaleSmoothly(_arrowPointer, Vector3.one);
         }
         
         private void FadeImageSmoothly(float targetValue)
