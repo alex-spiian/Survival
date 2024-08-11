@@ -6,6 +6,7 @@ using ScreenManager.Enums;
 using ScreenManager.Interfaces;
 using ScreenManager.Loaders.Scenes;
 using Screens.Inventory;
+using Screens.Warning;
 using SimpleEventBus.Disposables;
 using UnityEngine;
 
@@ -20,6 +21,7 @@ public class SceneScreenSettingsProvider : IScreenSettingsProvider, IDisposable
         AddScreenSettings(typeof(BattleScreen), "Battle");
         AddScreenSettings(typeof(FoundItemScreen), "FoundItemPopUp");
         AddScreenSettings(typeof(InventoryScreen), "Inventory");
+        AddScreenSettings(typeof(PopUpWarningScreen), "PopUpWarning");
 
         _subscriptions = new CompositeDisposable
         {

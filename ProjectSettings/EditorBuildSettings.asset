@@ -17,5 +17,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Inventory.unity
     guid: 047fefb8f72ac42c7b4fc854a6461090
+  - enabled: 1
+    path: Assets/Scenes/PopUpWarning.unity
+    guid: 5d9b59910d4cb4f3f988bbddeea50cee
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
