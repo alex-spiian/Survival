@@ -947,8 +947,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -10000
-  m_Sprite: {fileID: 21300000, guid: 582816d078ef5254685d575bbc1223cd, type: 3}
-  m_Color: {r: 0.9056604, g: 0.9056604, b: 0.9056604, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 6642a460c57a7428da1a6dbf2a51c0e3, type: 3}
+  m_Color: {r: 0.509434, g: 0.509434, b: 0.509434, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 2
@@ -1926,7 +1926,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _weaponSlots:
   - {fileID: 470354611}
-  - {fileID: 1913262425}
 --- !u!1 &2133216552
 GameObject:
   m_ObjectHideFlags: 0
@@ -2087,6 +2086,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3299589120833577116, guid: dcc97885647ae4e7994fe1777d52554a, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3449849462293669712, guid: dcc97885647ae4e7994fe1777d52554a, type: 3}
       propertyPath: m_Name
       value: Minigun
@@ -2184,6 +2187,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 45
       objectReference: {fileID: 0}
+    - target: {fileID: 1256912393017229152, guid: dd166b0df90084ff0880ad4de9da1ada, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7036351759219891953, guid: dd166b0df90084ff0880ad4de9da1ada, type: 3}
       propertyPath: m_Name
       value: Flamethrower
@@ -2244,6 +2251,10 @@ PrefabInstance:
     - target: {fileID: 803756011518966633, guid: 60725ea576efd4083bbd8643bdf7249c, type: 3}
       propertyPath: m_Name
       value: Bat
+      objectReference: {fileID: 0}
+    - target: {fileID: 1734095004156475695, guid: 60725ea576efd4083bbd8643bdf7249c, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

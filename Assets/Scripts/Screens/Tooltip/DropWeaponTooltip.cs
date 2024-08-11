@@ -1,5 +1,6 @@
 using Item;
 using JetBrains.Annotations;
+using Screens.Inventory;
 using TMPro;
 using UniTaskPubSub;
 using UnityEngine;
@@ -32,6 +33,7 @@ namespace Screens.Tooltip
         public void OnWeaponDropped()
         {
             _publisher.Publish(new WeaponDroppedEvent((WeaponConfig)_itemConfig));
+            ScreensManager.CloseScreen<InventoryScreen>();
         }
         
         protected override void SetValue(ItemConfig itemConfig)
