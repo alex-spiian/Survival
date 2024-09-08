@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace DefaultNamespace
@@ -6,7 +7,7 @@ namespace DefaultNamespace
     {
         private float _leftSide = -1;
         private float _rightSide = 1;
-        
+
         public float Move(Vector2 input, Transform transform, float speed)
         {
             var velocity = input.normalized * speed;
@@ -20,7 +21,7 @@ namespace DefaultNamespace
         {
             return Mathf.Max(Mathf.Abs(input.x), Mathf.Abs(input.y)) * speed;
         }
-        
+
         private void LookAt(float x, Transform transform)
         {
             if (x < 0)

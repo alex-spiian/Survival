@@ -10,6 +10,8 @@ namespace Screens.Tooltip
     {
         [SerializeField]
         private TooltipType _tooltipType;
+
+        [SerializeField] private int delay;
         
         private IItem _item;
         private bool _isTooltipOpen;
@@ -25,7 +27,7 @@ namespace Screens.Tooltip
             {
                 if (!IsPointerOverThisElement())
                 {
-                    await UniTask.Delay(500);
+                    await UniTask.Delay(delay);
                     ScreensManager.CloseScreen<TooltipScreen>();
                     _isTooltipOpen = false;
                 }
