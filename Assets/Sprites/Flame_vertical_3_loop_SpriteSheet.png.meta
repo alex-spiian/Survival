@@ -1,0 +1,492 @@
+fileFormatVersion: 2
+guid: 44fe430b10a71a34ab0b5578de661ef9
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Flame_vertical_3_loop_SpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 1564
+        width: 228
+        height: 463
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fe44f484567f43f2be62fd5eb92e51d
+      internalID: -865653883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flame_vertical_3_loop_SpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 1557
+        width: 227
+        height: 471
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63fe2380f9ed6487fa609dc6f1696d70
+      internalID: 1390605445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flame_vertical_3_loop_SpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 1171
+        y: 1567
+        width: 227
+        height: 462
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32b88753e5079495f8bce4672d1f7a38
+      internalID: -336318704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flame_vertical_3_loop_SpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 1685
+        y: 1577
+        width: 225
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbc8a3a235abd4aad94acc461af5f1b0
+      internalID: -205660276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flame_vertical_3_loop_SpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 1052
+        width: 225
+        height: 463
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60a376d5a79a140c39d85f568bd98484
+      internalID: 1965620723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flame_vertical_3_loop_SpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 655
+        y: 1045
+        width: 229
+        height: 471
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e92723c31ad0490fbf93156e76ba8a6
+      internalID: 1424359606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flame_vertical_3_loop_SpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 1162
+        y: 1055
+        width: 232
+        height: 462
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b74c75a1472654adfa74b490c02deb64
+      internalID: 2139877356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flame_vertical_3_loop_SpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 1674
+        y: 1065
+        width: 230
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96df69125650143caa5cea70953fa165
+      internalID: 816075211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flame_vertical_3_loop_SpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 540
+        width: 228
+        height: 458
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d869bcf35ed54724817c99a6048fcc0
+      internalID: -127166572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flame_vertical_3_loop_SpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 533
+        width: 228
+        height: 470
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9658323ccc2d64520a95455b0e3aac41
+      internalID: -1402835647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flame_vertical_3_loop_SpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 1162
+        y: 543
+        width: 231
+        height: 461
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2736a42745f9d49228fd163d6adcba5c
+      internalID: -1542927598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flame_vertical_3_loop_SpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 1674
+        y: 553
+        width: 225
+        height: 452
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 643627886ab814d85bd31c18695ccb85
+      internalID: 702861711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flame_vertical_3_loop_SpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 61
+        width: 225
+        height: 432
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31c5ac875fe7a408ea8940f0e0dfeaa7
+      internalID: 1801064874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flame_vertical_3_loop_SpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 28
+        width: 229
+        height: 463
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2f9002b44180456f8be43e03df8bb58
+      internalID: 463950141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flame_vertical_3_loop_SpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 21
+        width: 232
+        height: 471
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c2de450aea8047fc80d3ef22feda4f4
+      internalID: 552315454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flame_vertical_3_loop_SpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 31
+        width: 230
+        height: 462
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b2a583e4a663412f9ecf6addf90cb91
+      internalID: 1075830858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: b3846cffda3c741d7abd8e886a2e003d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Flame_vertical_3_loop_SpriteSheet_0: -865653883
+      Flame_vertical_3_loop_SpriteSheet_1: 1390605445
+      Flame_vertical_3_loop_SpriteSheet_10: -1542927598
+      Flame_vertical_3_loop_SpriteSheet_11: 702861711
+      Flame_vertical_3_loop_SpriteSheet_12: 1801064874
+      Flame_vertical_3_loop_SpriteSheet_13: 463950141
+      Flame_vertical_3_loop_SpriteSheet_14: 552315454
+      Flame_vertical_3_loop_SpriteSheet_15: 1075830858
+      Flame_vertical_3_loop_SpriteSheet_2: -336318704
+      Flame_vertical_3_loop_SpriteSheet_3: -205660276
+      Flame_vertical_3_loop_SpriteSheet_4: 1965620723
+      Flame_vertical_3_loop_SpriteSheet_5: 1424359606
+      Flame_vertical_3_loop_SpriteSheet_6: 2139877356
+      Flame_vertical_3_loop_SpriteSheet_7: 816075211
+      Flame_vertical_3_loop_SpriteSheet_8: -127166572
+      Flame_vertical_3_loop_SpriteSheet_9: -1402835647
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
