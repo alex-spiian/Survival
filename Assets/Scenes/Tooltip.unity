@@ -935,7 +935,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parentReference:
-    TypeName: RootLifetimeScope
+    TypeName: Survival.GameLifetimeScope
   autoRun: 1
   autoInjectGameObjects:
   - {fileID: 508597293}
