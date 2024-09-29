@@ -6,3 +6,5 @@ Stack:
 - UniTask;
 - UniTask Pub Sub;
 - DOTween.
+
+The game is still in development.
