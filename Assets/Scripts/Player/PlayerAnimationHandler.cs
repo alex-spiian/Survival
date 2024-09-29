@@ -6,7 +6,7 @@ namespace Survival
     public class PlayerAnimationHandler : MonoBehaviour
     {
         private Animator _animator;
-        private static readonly int Speed = Animator.StringToHash("Speed");
+        private readonly int Speed = Animator.StringToHash("Speed");
 
         private void Awake()
         {
