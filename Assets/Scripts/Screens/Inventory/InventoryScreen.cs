@@ -1,8 +1,8 @@
-using Inventory;
+using Survival;
 using ScreenManager.Core;
 using UnityEngine;
 
-namespace Screens.Inventory
+namespace Survival.UI
 {
     public class InventoryScreen : UIScreen<InventoryContext>
     {

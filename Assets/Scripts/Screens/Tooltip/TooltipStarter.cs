@@ -2,7 +2,7 @@ using Cysharp.Threading.Tasks;
 using JetBrains.Annotations;
 using UnityEngine;
 
-namespace Screens.Tooltip
+namespace Survival.UI
 {
     // put this component on an object you want to display a tooltip
     [RequireComponent(typeof(IItem))]

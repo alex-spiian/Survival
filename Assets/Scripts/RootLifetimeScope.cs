@@ -1,16 +1,19 @@
-using Inventory;
+using Survival;
 using UniTaskPubSub;
 using VContainer;
 using VContainer.Unity;
 
-public class RootLifetimeScope : LifetimeScope
+namespace Survival
 {
-    protected override void Configure(IContainerBuilder builder)
+    public class RootLifetimeScope : LifetimeScope
     {
-        builder.Register<InventoryModel>(Lifetime.Singleton);
+        protected override void Configure(IContainerBuilder builder)
+        {
+            builder.Register<InventoryModel>(Lifetime.Singleton);
 
-        builder.Register<AsyncMessageBus>(Lifetime.Singleton)
-            .AsImplementedInterfaces()
-            .AsSelf();
+            builder.Register<AsyncMessageBus>(Lifetime.Singleton)
+                .AsImplementedInterfaces()
+                .AsSelf();
+        }
     }
 }

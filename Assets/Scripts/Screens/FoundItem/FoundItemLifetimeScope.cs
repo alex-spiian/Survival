@@ -1,6 +1,6 @@
 using VContainer.Unity;
 
-namespace FoundItem
+namespace Survival.UI
 {
     public class FoundItemLifetimeScope : LifetimeScope
     {

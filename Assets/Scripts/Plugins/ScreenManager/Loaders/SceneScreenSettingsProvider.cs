@@ -1,13 +1,10 @@
 using System;
 using System.Collections.Generic;
-using Battle;
-using FoundItem;
+using Survival.UI;
 using ScreenManager.Enums;
 using ScreenManager.Interfaces;
 using ScreenManager.Loaders.Scenes;
-using Screens.Inventory;
-using Screens.Tooltip;
-using Screens.Warning;
+using Survival.UI.Warning;
 using SimpleEventBus.Disposables;
 using UnityEngine;
 

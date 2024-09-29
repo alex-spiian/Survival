@@ -1,9 +1,9 @@
-using Item;
-using Screens.Tooltip;
+using Survival;
+using Survival.UI;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Screens.Inventory
+namespace Survival.UI
 {
     public class InventoryItem : MonoBehaviour, IItem
     {

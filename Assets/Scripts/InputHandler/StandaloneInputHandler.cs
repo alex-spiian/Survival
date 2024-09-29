@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace InputHandler
+namespace Survival
 {
     public class StandaloneInputHandler : IInputHandler
     {

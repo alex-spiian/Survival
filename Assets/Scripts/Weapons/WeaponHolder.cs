@@ -1,8 +1,8 @@
 using System.Linq;
-using Item;
+using Survival;
 using UnityEngine;
 
-namespace Weapons
+namespace Survival.Weapons
 {
     public class WeaponHolder : MonoBehaviour
     {

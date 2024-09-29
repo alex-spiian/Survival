@@ -1,7 +1,7 @@
-using Battle;
+using Survival.UI;
 using UnityEngine;
 
-namespace Screens
+namespace Survival.UI
 {
     public class MainManager : MonoBehaviour
     {

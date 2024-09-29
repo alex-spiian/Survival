@@ -1,6 +1,6 @@
-using Item;
+using Survival;
 
-namespace Screens
+namespace Survival.UI
 {
     public interface ITooltip
     {

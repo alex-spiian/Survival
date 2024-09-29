@@ -1,9 +1,8 @@
-using DefaultNamespace;
-using InputHandler;
+using Survival;
 using UnityEngine;
 using VContainer;
 
-namespace Player
+namespace Survival
 {
     public class Player : MonoBehaviour
     {

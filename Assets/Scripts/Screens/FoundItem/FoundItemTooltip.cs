@@ -1,10 +1,10 @@
-using Item;
-using Screens;
+using Survival;
+using Survival.UI;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace FoundItem
+namespace Survival.UI
 {
     public class FoundItemTooltip : MonoBehaviour, ITooltip
     {

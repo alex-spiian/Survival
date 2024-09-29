@@ -1,6 +1,6 @@
 using UnityHFSM;
 
-namespace Enemy
+namespace Survival
 {
     public class ChaserAI : Enemy
     {
@@ -14,10 +14,11 @@ namespace Enemy
 
             var moveToPointMoveSet = new MoveToPoint(transform, TargetTransform, Animator, Speed);
             var chaseStateName = nameof(ChaseState);
-            var chaseState = new ChaseState(moveToPointMoveSet, false);
+            var chaseState = new ChaseState(moveToPointMoveSet, true);
+            
+            StateMachine.AddState(chaseStateName, chaseState);
             
             //StateMachine.AddState(idleStateName, idleState);
-            StateMachine.AddState(chaseStateName, chaseState);
             StateMachine.Init();
         }
     }

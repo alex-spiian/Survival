@@ -1,12 +1,15 @@
-using InputHandler;
+using Survival;
 using VContainer;
 using VContainer.Unity;
 
-public class GameLifetimeScope : LifetimeScope
+namespace Survival
 {
-    protected override void Configure(IContainerBuilder builder)
+    public class GameLifetimeScope : LifetimeScope
     {
-        builder.Register<StandaloneInputHandler>(Lifetime.Singleton)
-            .AsImplementedInterfaces();
+        protected override void Configure(IContainerBuilder builder)
+        {
+            builder.Register<StandaloneInputHandler>(Lifetime.Singleton)
+                .AsImplementedInterfaces();
+        }
     }
 }

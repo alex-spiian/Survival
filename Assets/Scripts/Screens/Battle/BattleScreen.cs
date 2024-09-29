@@ -1,15 +1,15 @@
-using Inventory;
+using Survival;
 using JetBrains.Annotations;
 using ScreenManager.Core;
-using Screens.Inventory;
-using Screens.Inventory.Events;
-using Screens.Warning;
+using Survival.UI;
+using Survival.UI.Events;
+using Survival.UI.Warning;
 using SimpleEventBus.Disposables;
 using UniTaskPubSub;
 using UnityEngine;
 using VContainer;
 
-namespace Battle
+namespace Survival.UI
 {
     public class BattleScreen : UIScreen<BattleContext>
     {

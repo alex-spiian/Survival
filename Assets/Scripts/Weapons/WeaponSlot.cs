@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Weapons
+namespace Survival.Weapons
 {
     public class WeaponSlot : MonoBehaviour
     {

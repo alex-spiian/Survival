@@ -2,14 +2,14 @@ using Cysharp.Threading.Tasks;
 using DG.Tweening;
 using JetBrains.Annotations;
 using ScreenManager.Core;
-using Screens.Inventory;
+using Survival.UI;
 using SimpleEventBus.Disposables;
 using UniTaskPubSub;
 using UnityEngine;
 using UnityEngine.UI;
 using VContainer;
 
-namespace FoundItem
+namespace Survival.UI
 {
     public class FoundItemScreen : UIScreen<FoundItemContext>
     {

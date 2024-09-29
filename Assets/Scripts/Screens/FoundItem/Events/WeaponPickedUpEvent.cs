@@ -1,6 +1,6 @@
-using Weapons;
+using Survival.Weapons;
 
-namespace FoundItem
+namespace Survival.UI
 {
     public struct WeaponPickedUpEvent
     {

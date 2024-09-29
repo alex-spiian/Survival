@@ -1,13 +1,13 @@
-using Item;
+using Survival;
 using JetBrains.Annotations;
-using Screens.Inventory;
+using Survival.UI;
 using TMPro;
 using UniTaskPubSub;
 using UnityEngine;
 using VContainer;
-using Weapons;
+using Survival.Weapons;
 
-namespace Screens.Tooltip
+namespace Survival.UI
 {
     public class DropWeaponTooltip : ItemTooltip
     {

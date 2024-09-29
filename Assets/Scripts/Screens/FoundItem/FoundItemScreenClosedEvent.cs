@@ -1,4 +1,4 @@
-namespace FoundItem
+namespace Survival.UI
 {
     public struct FoundItemScreenClosedEvent
     {

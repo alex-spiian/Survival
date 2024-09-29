@@ -1,11 +1,10 @@
-using Cysharp.Threading.Tasks;
-using FoundItem;
+using Survival.UI;
 using UniTaskPubSub;
 using UnityEngine;
 using VContainer;
-using Weapons;
+using Survival.Weapons;
 
-namespace Player
+namespace Survival
 {
     public class WeaponDetector : MonoBehaviour
     {

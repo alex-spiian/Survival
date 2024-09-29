@@ -1,6 +1,6 @@
-using Item;
+using Survival;
 
-namespace Weapons
+namespace Survival.Weapons
 {
     public struct WeaponDroppedEvent
     {

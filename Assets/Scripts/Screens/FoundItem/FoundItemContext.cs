@@ -1,7 +1,7 @@
-using Item;
-using Weapons;
+using Survival;
+using Survival.Weapons;
 
-namespace FoundItem
+namespace Survival.UI
 {
     public class FoundItemContext
     {

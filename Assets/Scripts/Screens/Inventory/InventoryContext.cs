@@ -1,6 +1,6 @@
-using Inventory;
+using Survival;
 
-namespace Screens.Inventory
+namespace Survival.UI
 {
     public class InventoryContext
     {

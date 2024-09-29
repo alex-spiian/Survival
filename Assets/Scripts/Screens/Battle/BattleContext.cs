@@ -1,4 +1,4 @@
-namespace Battle
+namespace Survival.UI
 {
     public class BattleContext
     {

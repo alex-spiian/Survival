@@ -2,7 +2,7 @@ using System.Linq;
 using ScreenManager.Core;
 using UnityEngine;
 
-namespace Screens.Tooltip
+namespace Survival.UI
 {
     public class TooltipScreen : UIScreen<TooltipContext>
     {

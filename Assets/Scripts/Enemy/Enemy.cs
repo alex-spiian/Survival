@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityHFSM;
 
-namespace Enemy
+namespace Survival
 {
     [RequireComponent(typeof(Animator))]
     public abstract class Enemy : MonoBehaviour

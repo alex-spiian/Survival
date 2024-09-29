@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace Screens.Tooltip
+namespace Survival.UI
 {
     [Serializable]
     public class TooltipData

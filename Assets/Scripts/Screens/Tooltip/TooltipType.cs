@@ -1,4 +1,4 @@
-namespace Screens.Tooltip
+namespace Survival.UI
 {
     public enum TooltipType
     {

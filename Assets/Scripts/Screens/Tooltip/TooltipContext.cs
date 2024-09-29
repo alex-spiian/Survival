@@ -1,7 +1,7 @@
-using Item;
+using Survival;
 using UnityEngine;
 
-namespace Screens.Tooltip
+namespace Survival.UI
 {
     public class TooltipContext
     {

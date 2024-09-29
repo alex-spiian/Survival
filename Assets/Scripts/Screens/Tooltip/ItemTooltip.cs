@@ -1,9 +1,9 @@
-using Item;
+using Survival;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Screens.Tooltip
+namespace Survival.UI
 {
     public class ItemTooltip : MonoBehaviour
     {

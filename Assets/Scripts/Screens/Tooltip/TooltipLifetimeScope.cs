@@ -1,7 +1,7 @@
 using VContainer;
 using VContainer.Unity;
 
-namespace Screens.Tooltip
+namespace Survival.UI
 {
     public class TooltipLifetimeScope :  LifetimeScope
     {

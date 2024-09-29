@@ -1,12 +1,12 @@
-using FoundItem;
-using Inventory;
-using Screens.Inventory.Events;
+using Survival.UI;
+using Survival;
+using Survival.UI.Events;
 using SimpleEventBus.Disposables;
 using UniTaskPubSub;
 using UnityEngine;
 using VContainer;
 
-namespace Weapons
+namespace Survival.Weapons
 {
     public class WeaponController : MonoBehaviour
     {
