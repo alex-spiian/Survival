@@ -5,7 +5,7 @@ namespace Survival
     public class EnemySpawner : MonoBehaviour
     {
         [SerializeField]
-        private Enemy _enemyPrefab;
+        private Enemy.Enemy _enemyPrefab;
 
         [SerializeField]
         private Transform _spawnPoint;

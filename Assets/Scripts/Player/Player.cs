@@ -1,8 +1,6 @@
-using Survival;
 using UnityEngine;
 using VContainer;
-
-namespace Survival
+namespace Survival.Player
 {
     public class Player : MonoBehaviour
     {

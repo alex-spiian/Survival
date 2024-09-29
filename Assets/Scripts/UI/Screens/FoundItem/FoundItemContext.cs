@@ -1,4 +1,4 @@
-using Survival;
+using Survival.Item;
 using Survival.Weapons;
 
 namespace Survival.UI

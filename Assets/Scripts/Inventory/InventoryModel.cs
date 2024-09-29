@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using System.Linq;
-using Survival;
+using Survival.Item;
 using Survival.Weapons;
 
-namespace Survival
+namespace Survival.Inventory
 {
     public class InventoryModel
     {

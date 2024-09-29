@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityHFSM;
 
-namespace Survival
+namespace Survival.Enemy
 {
     public class ChaseState : StateBase
     {

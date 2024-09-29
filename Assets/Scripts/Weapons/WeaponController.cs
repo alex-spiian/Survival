@@ -1,7 +1,7 @@
 using Survival.UI;
-using Survival;
 using Survival.UI.Events;
 using SimpleEventBus.Disposables;
+using Survival.Inventory;
 using UniTaskPubSub;
 using UnityEngine;
 using VContainer;

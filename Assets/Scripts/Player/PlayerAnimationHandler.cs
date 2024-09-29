@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Survival
+namespace Survival.Player
 {
     [RequireComponent(typeof(Animator))]
     public class PlayerAnimationHandler : MonoBehaviour

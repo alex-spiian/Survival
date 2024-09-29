@@ -4,7 +4,7 @@ using UnityEngine;
 using VContainer;
 using Survival.Weapons;
 
-namespace Survival
+namespace Survival.Player
 {
     public class WeaponDetector : MonoBehaviour
     {

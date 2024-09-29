@@ -1,4 +1,4 @@
-using Survival;
+using Survival.Inventory;
 using UniTaskPubSub;
 using VContainer;
 using VContainer.Unity;

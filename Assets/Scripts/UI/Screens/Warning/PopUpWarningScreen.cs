@@ -5,7 +5,7 @@ using ScreenManager.Core;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Survival.UI.Warning
+namespace Survival.UI
 {
     public class PopUpWarningScreen : UIScreen<PopUpWarningContext>
     {

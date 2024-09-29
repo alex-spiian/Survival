@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Survival
+namespace Survival.Item
 {
     [CreateAssetMenu(menuName = "ScriptableObject/ItemConfig", fileName = "ItemConfig")]
     public class ItemConfig : ScriptableObject

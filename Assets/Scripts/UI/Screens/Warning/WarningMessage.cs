@@ -1,7 +1,7 @@
 using TMPro;
 using UnityEngine;
 
-namespace Survival.UI.Warning
+namespace Survival.UI
 {
     public class WarningMessage : MonoBehaviour
     {

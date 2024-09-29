@@ -1,5 +1,5 @@
-using Survival;
 using ScreenManager.Core;
+using Survival.Inventory;
 using UnityEngine;
 
 namespace Survival.UI

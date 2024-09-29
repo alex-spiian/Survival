@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Survival.UI.Warning
+namespace Survival.UI
 {
     public class PopUpWarningContext
     {

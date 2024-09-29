@@ -1,6 +1,6 @@
 using UnityHFSM;
 
-namespace Survival
+namespace Survival.Enemy
 {
     public class IdleState : StateBase
     {

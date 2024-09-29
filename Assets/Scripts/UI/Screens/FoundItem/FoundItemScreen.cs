@@ -2,7 +2,6 @@ using Cysharp.Threading.Tasks;
 using DG.Tweening;
 using JetBrains.Annotations;
 using ScreenManager.Core;
-using Survival.UI;
 using SimpleEventBus.Disposables;
 using UniTaskPubSub;
 using UnityEngine;

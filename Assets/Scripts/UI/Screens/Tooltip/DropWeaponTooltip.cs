@@ -1,6 +1,5 @@
-using Survival;
 using JetBrains.Annotations;
-using Survival.UI;
+using Survival.Item;
 using TMPro;
 using UniTaskPubSub;
 using UnityEngine;

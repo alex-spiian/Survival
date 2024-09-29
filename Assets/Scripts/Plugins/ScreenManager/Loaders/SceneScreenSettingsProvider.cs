@@ -4,7 +4,6 @@ using Survival.UI;
 using ScreenManager.Enums;
 using ScreenManager.Interfaces;
 using ScreenManager.Loaders.Scenes;
-using Survival.UI.Warning;
 using SimpleEventBus.Disposables;
 using UnityEngine;
 

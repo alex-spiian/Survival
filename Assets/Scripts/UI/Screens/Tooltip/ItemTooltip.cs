@@ -1,4 +1,4 @@
-using Survival;
+using Survival.Item;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;

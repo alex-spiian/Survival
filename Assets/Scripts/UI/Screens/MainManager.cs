@@ -1,4 +1,3 @@
-using Survival.UI;
 using UnityEngine;
 
 namespace Survival.UI

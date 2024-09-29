@@ -1,5 +1,5 @@
 using System.Linq;
-using Survival;
+using Survival.Item;
 using UnityEngine;
 
 namespace Survival.Weapons

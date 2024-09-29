@@ -1,5 +1,4 @@
-using System;
-using Survival;
+using Survival.Item;
 using UnityEngine;
 
 namespace Survival.Weapons

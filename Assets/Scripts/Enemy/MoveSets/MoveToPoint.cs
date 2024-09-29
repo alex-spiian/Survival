@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Survival
+namespace Survival.Enemy
 {
     public class MoveToPoint
     {

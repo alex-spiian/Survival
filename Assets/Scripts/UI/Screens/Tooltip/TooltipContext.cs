@@ -1,4 +1,4 @@
-using Survival;
+using Survival.Item;
 using UnityEngine;
 
 namespace Survival.UI
