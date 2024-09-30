@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 602858462779178654}
   - component: {fileID: 4980246322683970673}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: WeaponHolder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -62,7 +62,7 @@ GameObject:
   - component: {fileID: 770762657458008867}
   - component: {fileID: 3848936246898980073}
   - component: {fileID: 2866279143397117121}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -211,7 +211,7 @@ GameObject:
   - component: {fileID: 3221586029636612567}
   - component: {fileID: 8297384521917850031}
   - component: {fileID: 7490766887852281515}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -302,7 +302,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8280195067064628651}
   - component: {fileID: 5092840358533589957}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Shadow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -388,7 +388,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3301616699540344482}
   - component: {fileID: 3576150530422596277}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: WeaponSlot
   m_TagString: Untagged
   m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
@@ -434,7 +434,7 @@ GameObject:
   - component: {fileID: 91385360558937305}
   - component: {fileID: 3527580590832984946}
   - component: {fileID: 2710332984277991051}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: PlayerSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -554,7 +554,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6374857965694248571}
   - component: {fileID: 5631265435070869429}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: WeaponSlot (1)
   m_TagString: Untagged
   m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
