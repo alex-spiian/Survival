@@ -5,6 +5,7 @@ namespace Survival.Enemy
     public class Idle
     {
         private Animator _animator;
+        private static readonly int _idle = Animator.StringToHash("Idle");
 
         public Idle(Animator animator)
         {
@@ -13,7 +14,7 @@ namespace Survival.Enemy
 
         public void Start()
         {
-            _animator.SetTrigger("Idle");
+            _animator.SetTrigger(_idle);
         }
     }
 }

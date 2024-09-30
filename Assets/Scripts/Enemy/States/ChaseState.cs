@@ -1,4 +1,3 @@
-using UnityEngine;
 using UnityHFSM;
 
 namespace Survival.Enemy
@@ -12,14 +11,8 @@ namespace Survival.Enemy
             _moveToPoint = moveToPoint;
         }
 
-        public override void OnEnter()
-        {
-            Debug.Log("ChaseState OnEnter");
-        }
-
         public override void OnLogic()
         {
-            Debug.Log("ChaseState on logic");
             _moveToPoint.Move();
         }
     }
