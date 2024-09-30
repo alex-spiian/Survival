@@ -21,7 +21,7 @@ namespace Survival.Enemy
         {
             var direction = _targetTransform.position - _enemyTransform.position;
             direction.Normalize();
-            _enemyTransform.position = direction * Time.deltaTime * _speed;
+            _enemyTransform.position += direction * Time.deltaTime * _speed;
             //_animator.SetFloat("Speed", _speed);
         }
 
