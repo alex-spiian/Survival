@@ -47,7 +47,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _enemyPrefab: {fileID: 5374477289206864859, guid: 9f34390abab694c58a8c31ca42cecac7, type: 3}
   _spawnPoint: {fileID: 5274761017068463155}
-  initialEnemiesCount: 5
+  initialEnemiesCount: 1
   _targetTransform: {fileID: 0}
 --- !u!1 &8323260152294943640
 GameObject:
