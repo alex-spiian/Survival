@@ -1,6 +1,6 @@
 namespace Survival.Weapons
 {
-    public class Weapon : Item
+    public class Weapon : Item.Item
     {
         
     }

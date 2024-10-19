@@ -3,6 +3,7 @@ using DG.Tweening;
 using JetBrains.Annotations;
 using ScreenManager.Core;
 using SimpleEventBus.Disposables;
+using Survival.Events;
 using UniTaskPubSub;
 using UnityEngine;
 using UnityEngine.UI;

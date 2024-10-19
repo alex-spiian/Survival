@@ -1,7 +1,7 @@
 using JetBrains.Annotations;
 using ScreenManager.Core;
-using Survival.UI.Events;
 using SimpleEventBus.Disposables;
+using Survival.Events;
 using Survival.Inventory;
 using UniTaskPubSub;
 using UnityEngine;

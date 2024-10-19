@@ -1,7 +1,6 @@
-using Survival.Item;
 using UnityEngine;
 
-namespace Survival.Weapons
+namespace Survival.Item
 {
     [RequireComponent(typeof(Collider2D))]
     public class Item : MonoBehaviour

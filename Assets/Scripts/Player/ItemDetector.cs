@@ -17,7 +17,7 @@ namespace Survival.Player
         
         private void OnTriggerEnter2D(Collider2D collider)
         {
-            if (collider.TryGetComponent<Weapons.Item>(out var item))
+            if (collider.TryGetComponent<Item.Item>(out var item))
             {
                 ScreensManager.OpenScreen<FoundItemScreen, FoundItemContext>(new FoundItemContext(item.ItemConfig, item));
             }

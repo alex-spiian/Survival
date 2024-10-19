@@ -1,4 +1,4 @@
-namespace Survival.UI.Events
+namespace Survival.Events
 {
     public struct InventoryIsFullEvent
     {

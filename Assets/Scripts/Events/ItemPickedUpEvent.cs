@@ -1,13 +1,13 @@
 using Survival.Item;
 
-namespace Survival.UI
+namespace Survival.Events
 {
     public struct ItemPickedUpEvent
     {
         public ItemConfig ItemConfig { get; }
-        public Weapons.Item Item { get; }
+        public Item.Item Item { get; }
 
-        public ItemPickedUpEvent(ItemConfig config, Weapons.Item item)
+        public ItemPickedUpEvent(ItemConfig config, Item.Item item)
         {
             ItemConfig = config;
             Item = item;

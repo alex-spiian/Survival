@@ -1,6 +1,6 @@
 using Survival.Item;
 
-namespace Survival.Weapons
+namespace Survival.Events
 {
     public struct ItemDroppedEvent
     {

@@ -5,9 +5,9 @@ namespace Survival.UI
     public class FoundItemContext
     {
         public ItemConfig ItemConfig { get; }
-        public Weapons.Item Item { get; }
+        public Item.Item Item { get; }
 
-        public FoundItemContext(ItemConfig itemConfig, Weapons.Item item)
+        public FoundItemContext(ItemConfig itemConfig, Item.Item item)
         {
             ItemConfig = itemConfig;
             Item = item;

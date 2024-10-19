@@ -1,10 +1,11 @@
 using JetBrains.Annotations;
+using Survival.Events;
 using Survival.Item;
+using Survival.Weapons;
 using TMPro;
 using UniTaskPubSub;
 using UnityEngine;
 using VContainer;
-using Survival.Weapons;
 
 namespace Survival.UI
 {

@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using ScreenManager.Core;
+using Survival.Events;
 using Survival.Inventory;
 using Survival.Item;
-using Survival.Weapons;
 using UniTaskPubSub;
 using UnityEngine;
 using VContainer;

@@ -1,5 +1,5 @@
-using Survival.UI;
 using SimpleEventBus.Disposables;
+using Survival.Events;
 using UniTaskPubSub;
 using UnityEngine;
 using VContainer;
