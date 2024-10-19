@@ -2,6 +2,6 @@ namespace Survival
 {
     public static class GlobalConstants
     {
-        public const string WEAPON_TAG = "Weapon";
+        public const string ITEM_TAG = "Item";
     }
 }

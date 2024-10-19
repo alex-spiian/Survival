@@ -137,7 +137,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.6698113, g: 0.6698113, b: 0.6698113, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -167,6 +167,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _itemIcon: {fileID: 7424102086466447754}
+  _background: {fileID: 6918712245812675497}
+  _selectedBackgroundSprite: {fileID: 0}
+  _deSelectedBackgroundSprite: {fileID: 0}
 --- !u!114 &520883284301492156
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -180,6 +183,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _tooltipType: 0
+  delay: 0
 --- !u!114 &7353275343452929049
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -224,9 +228,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 520883284301492156}
-        m_TargetAssemblyTypeName: Screens.Tooltip.TooltipStarter, Assembly-CSharp
-        m_MethodName: OnPointerClick
+      - m_Target: {fileID: 8845741881032987006}
+        m_TargetAssemblyTypeName: Survival.UI.InventoryItem, Assembly-CSharp
+        m_MethodName: OnClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

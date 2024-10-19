@@ -15,3 +15,4 @@ MonoBehaviour:
   <Name>k__BackingField: MINIGUN
   <Icon>k__BackingField: {fileID: 21300000, guid: 83acfc9fef262451cae1b15db14e518f, type: 3}
   <Damage>k__BackingField: 10
+  <Prefab>k__BackingField: {fileID: 6126062846490832108, guid: dcc97885647ae4e7994fe1777d52554a, type: 3}

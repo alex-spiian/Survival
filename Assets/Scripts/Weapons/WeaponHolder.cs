@@ -9,21 +9,27 @@ namespace Survival.Weapons
         [SerializeField]
         private WeaponSlot[] _weaponSlots;
 
-        public bool TrySetWeapon(Weapon weapon)
+        public bool TrySetWeapon(WeaponConfig weaponConfig)
         {
             if (CanPickUp())
             {
                 var slot = GetFreeSlot();
-                slot.SetWeapon(weapon);
+                slot.SetWeapon(weaponConfig);
                 return true;
             }
             return false;
         }
 
-        public void RemoveWeapon(WeaponConfig weaponConfig)
+        public void TryRemoveWeapon(WeaponConfig weaponConfig)
         {
-            var neededSlot = _weaponSlots.FirstOrDefault(weapon => weapon.CurrentWeapon.WeaponConfig.Name == weaponConfig.Name);
-            neededSlot.RemoveWeapon();
+            var neededSlot = _weaponSlots.FirstOrDefault(weapon => weapon.CurrentWeapon.ItemConfig.Name == weaponConfig.Name);
+            if (neededSlot != null)
+            {
+                neededSlot.RemoveWeapon();
+                return;
+            }
+            
+            Debug.Log("Dropped weapon is not in hands");
         }
 
         private bool CanPickUp()

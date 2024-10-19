@@ -15,3 +15,4 @@ MonoBehaviour:
   <Name>k__BackingField: FLAMETHROWER
   <Icon>k__BackingField: {fileID: 21300000, guid: 9a11cbfd554fb47dc85795d8e11072f9, type: 3}
   <Damage>k__BackingField: 5
+  <Prefab>k__BackingField: {fileID: 8860719687909426610, guid: dd166b0df90084ff0880ad4de9da1ada, type: 3}

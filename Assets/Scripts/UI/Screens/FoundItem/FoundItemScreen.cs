@@ -44,7 +44,7 @@ namespace Survival.UI
         [UsedImplicitly]
         public void OnItemPickedUp()
         {
-            _publisher.PublishAsync(new WeaponPickedUpEvent(_context.Weapon));
+            _publisher.PublishAsync(new ItemPickedUpEvent(_context.ItemConfig, _context.Item));
         }
 
         private async void OnScreenClosed()

@@ -1,4 +1,3 @@
-using Cysharp.Threading.Tasks;
 using JetBrains.Annotations;
 using UnityEngine;
 
@@ -21,34 +20,12 @@ namespace Survival.UI
             _item = GetComponent<IItem>();
         }
         
-        private async void Update()
-        {
-            if (_isTooltipOpen && Input.GetMouseButtonDown(0))
-            {
-                if (!IsPointerOverThisElement())
-                {
-                    await UniTask.Delay(delay);
-                    ScreensManager.CloseScreen<TooltipScreen>();
-                    _isTooltipOpen = false;
-                }
-            }
-        }
-        
         [UsedImplicitly]
         public void OnPointerClick()
         {
             ScreensManager.OpenScreen<TooltipScreen, TooltipContext>
                 (new TooltipContext(_item.ItemConfig, _item.Transform as RectTransform, _tooltipType));
             _isTooltipOpen = true;
-        }
-        
-        private bool IsPointerOverThisElement()
-        {
-            return RectTransformUtility.RectangleContainsScreenPoint(
-                _item.Transform as RectTransform, 
-                Input.mousePosition, 
-                Camera.main
-            );
         }
     }
 }

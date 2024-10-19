@@ -15,3 +15,4 @@ MonoBehaviour:
   <Name>k__BackingField: BAT
   <Icon>k__BackingField: {fileID: 21300000, guid: 5b8c00ee3857b4c38b283f1fbed2f044, type: 3}
   <Damage>k__BackingField: 2
+  <Prefab>k__BackingField: {fileID: 7801513635440310282, guid: 60725ea576efd4083bbd8643bdf7249c, type: 3}

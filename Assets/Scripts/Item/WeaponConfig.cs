@@ -1,3 +1,4 @@
+using Survival.Weapons;
 using UnityEngine;
 
 namespace Survival.Item
@@ -6,5 +7,6 @@ namespace Survival.Item
     public class WeaponConfig : ItemConfig
     {
         [field:SerializeField] public float Damage { get; private set; }
+        [field:SerializeField] public Weapon Prefab { get; private set; }
     }
 }

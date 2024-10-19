@@ -32,7 +32,7 @@ namespace Survival.UI
         public void OnWeaponDropped()
         {
             _publisher.Publish(new WeaponDroppedEvent((WeaponConfig)_itemConfig));
-            ScreensManager.CloseScreen<InventoryScreen>();
+            ScreensManager.CloseScreen<TooltipScreen>();
         }
         
         protected override void SetValue(ItemConfig itemConfig)

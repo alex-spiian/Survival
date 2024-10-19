@@ -1,14 +1,14 @@
-using Survival.Weapons;
+using Survival.Item;
 
 namespace Survival.UI
 {
     public struct WeaponPickedUpEvent
     {
-        public Weapon Weapon { get; }
+        public WeaponConfig WeaponConfig { get; }
 
-        public WeaponPickedUpEvent(Weapon weapon)
+        public WeaponPickedUpEvent(WeaponConfig config)
         {
-            Weapon = weapon;
+            WeaponConfig = config;
         }
     }
 }

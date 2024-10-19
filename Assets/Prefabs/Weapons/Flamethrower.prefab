@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 456820694072839033}
   m_Layer: 0
   m_Name: Flamethrower
-  m_TagString: Weapon
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e460fc9b4484111a1d9ec0e47dff690, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <WeaponConfig>k__BackingField: {fileID: 11400000, guid: 6b72b4b86b48e4d58b183589b2e7674c, type: 2}
+  <ItemConfig>k__BackingField: {fileID: 11400000, guid: 6b72b4b86b48e4d58b183589b2e7674c, type: 2}
 --- !u!61 &456820694072839033
 BoxCollider2D:
   m_ObjectHideFlags: 0

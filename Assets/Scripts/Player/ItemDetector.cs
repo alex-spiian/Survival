@@ -2,11 +2,10 @@ using Survival.UI;
 using UniTaskPubSub;
 using UnityEngine;
 using VContainer;
-using Survival.Weapons;
 
 namespace Survival.Player
 {
-    public class WeaponDetector : MonoBehaviour
+    public class ItemDetector : MonoBehaviour
     {
         private IAsyncPublisher _publisher;
 
@@ -15,17 +14,18 @@ namespace Survival.Player
         {
             _publisher = publisher;
         }
+        
         private void OnTriggerEnter2D(Collider2D collider)
         {
-            if (collider.TryGetComponent<Weapon>(out var weapon))
+            if (collider.TryGetComponent<Weapons.Item>(out var item))
             {
-                ScreensManager.OpenScreen<FoundItemScreen, FoundItemContext>(new FoundItemContext(weapon.WeaponConfig, weapon));
+                ScreensManager.OpenScreen<FoundItemScreen, FoundItemContext>(new FoundItemContext(item.ItemConfig, item));
             }
         }
 
         private void OnTriggerExit2D(Collider2D collider)
         {
-            if (collider.CompareTag(GlobalConstants.WEAPON_TAG))
+            if (collider.CompareTag(GlobalConstants.ITEM_TAG))
             {
                 _publisher.Publish(new FoundItemScreenClosedEvent());
             }

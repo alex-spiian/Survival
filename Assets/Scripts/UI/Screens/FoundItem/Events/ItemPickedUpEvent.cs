@@ -2,14 +2,14 @@ using Survival.Item;
 
 namespace Survival.UI
 {
-    public class FoundItemContext
+    public struct ItemPickedUpEvent
     {
         public ItemConfig ItemConfig { get; }
         public Weapons.Item Item { get; }
 
-        public FoundItemContext(ItemConfig itemConfig, Weapons.Item item)
+        public ItemPickedUpEvent(ItemConfig config, Weapons.Item item)
         {
-            ItemConfig = itemConfig;
+            ItemConfig = config;
             Item = item;
         }
     }
