@@ -2,8 +2,10 @@ using UnityEngine;
 using VContainer;
 namespace Survival.Player
 {
-    public class Player : MonoBehaviour
+    public class Player : MonoBehaviour, IPlayerTransformProvider
     {
+        public Transform Transform => transform;
+
         [SerializeField] private float _speed;
         [SerializeField] private PlayerAnimationHandler _animationHandler;
         

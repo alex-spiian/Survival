@@ -37,7 +37,7 @@ namespace Survival.UI
 
         private void GenerateInventory(InventoryModel inventory)
         {
-            var items = inventory.Items;
+            var items = inventory.AllItems;
 
             foreach (var itemConfig in items)
             {

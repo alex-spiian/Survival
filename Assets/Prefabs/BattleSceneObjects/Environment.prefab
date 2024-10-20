@@ -110,16 +110,16 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 490569634139666219}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 8668787246104468696}
-  - {fileID: 1517740012267925818}
   - {fileID: 8230057536688118421}
   - {fileID: 4399826163528752290}
-  m_Father: {fileID: 398136270490732950}
+  - {fileID: 8668787246104468696}
+  - {fileID: 1517740012267925818}
+  m_Father: {fileID: 2094176317887337916}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2033700299976695462
 GameObject:
@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 6930848361394237712}
   - component: {fileID: 1772401245806908125}
   m_Layer: 0
-  m_Name: Left
+  m_Name: LeftBorder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -264,6 +264,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2094176317887337916}
   - component: {fileID: 935360237342423399}
+  - component: {fileID: 5890741040675102491}
   m_Layer: 0
   m_Name: GameField
   m_TagString: Untagged
@@ -283,7 +284,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 8708538825058821462}
   m_Father: {fileID: 398136270490732950}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &935360237342423399
@@ -340,6 +342,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &5890741040675102491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2148976264983987202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a29620fbc67450db9d17067154d7cef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _topBorder: {fileID: 4864652906766740211}
+  _bottomBorder: {fileID: 5646193664011900007}
+  _leftBorder: {fileID: 6930848361394237712}
+  _rightBorder: {fileID: 6302013857620682783}
 --- !u!1 &5007106966254432271
 GameObject:
   m_ObjectHideFlags: 0
@@ -352,7 +370,7 @@ GameObject:
   - component: {fileID: 6302013857620682783}
   - component: {fileID: 6654000978381586867}
   m_Layer: 0
-  m_Name: Right
+  m_Name: RightBorder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -485,7 +503,7 @@ GameObject:
   - component: {fileID: 4864652906766740211}
   - component: {fileID: 2726820068348460218}
   m_Layer: 0
-  m_Name: Upper
+  m_Name: TopBorder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -637,7 +655,6 @@ Transform:
   m_Children:
   - {fileID: 8946093739376135920}
   - {fileID: 2094176317887337916}
-  - {fileID: 8708538825058821462}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &8233788325952149202
@@ -652,7 +669,7 @@ GameObject:
   - component: {fileID: 5646193664011900007}
   - component: {fileID: 4260944589806722445}
   m_Layer: 0
-  m_Name: Lower
+  m_Name: BottomBorder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

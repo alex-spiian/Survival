@@ -1,4 +1,3 @@
-using Survival.Item;
 using UnityEngine;
 
 namespace Survival.Weapons
@@ -8,22 +7,23 @@ namespace Survival.Weapons
         public bool IsBusy { get; private set; }
         public Weapon CurrentWeapon { get; private set; }
 
-        public void SetWeapon(WeaponConfig weaponConfig)
+        public void SetWeapon(WeaponConfig config)
         {
-            var weapon = Instantiate(weaponConfig.Prefab, transform);
-            
-            weapon.transform.localPosition = Vector3.zero;
-            weapon.transform.rotation = Quaternion.identity;
-            weapon.OnWeaponPickedUp();
+            var weapon = Instantiate(config.Prefab, transform);
             CurrentWeapon = weapon;
+
+            CurrentWeapon.transform.localPosition = Vector3.zero;
+            CurrentWeapon.transform.rotation = Quaternion.identity;
+            CurrentWeapon.OnWeaponPickedUp();
+            CurrentWeapon.MarkAsInHands();
             IsBusy = true;
+            
+            Debug.Log("SetWeapon");
         }
 
         public void RemoveWeapon()
         {
-            // add some throwing effect
-            CurrentWeapon.transform.SetParent(null);
-            CurrentWeapon.OnWeaponDropped();
+            Destroy(CurrentWeapon.gameObject);
             IsBusy = false;
         }
     }

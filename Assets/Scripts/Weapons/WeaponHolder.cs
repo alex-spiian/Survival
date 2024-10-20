@@ -8,12 +8,12 @@ namespace Survival.Weapons
         [SerializeField]
         private WeaponSlot[] _weaponSlots;
 
-        public bool TrySetWeapon(WeaponConfig weaponConfig)
+        public bool TrySetWeapon(WeaponConfig config)
         {
             if (CanPickUp())
             {
                 var slot = GetFreeSlot();
-                slot.SetWeapon(weaponConfig);
+                slot.SetWeapon(config);
                 return true;
             }
             return false;

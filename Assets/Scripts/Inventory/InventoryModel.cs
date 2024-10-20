@@ -13,7 +13,8 @@ namespace Survival.Inventory
 {
     public class InventoryModel : IDisposable
     {
-        public List<ItemConfig> Items { get; } = new();
+        public List<ItemConfig> AllItems { get; } = new();
+        public List<ItemConfig> ItemsOnPlayer { get; } = new();
 
         private AsyncMessageBus _messageBus;
         private readonly CompositeDisposable _subscriptions = new();
@@ -23,39 +24,43 @@ namespace Survival.Inventory
         {
             _messageBus = messageBus;
             _subscriptions.Add(_messageBus.Subscribe<ItemDroppedEvent>(OnItemDropped));
-            _subscriptions.Add(_messageBus.Subscribe<ItemPickedUpEvent>(OnItemPickedUp));
+            _subscriptions.Add(_messageBus.Subscribe<ItemTriedPickUpEvent>(OnItemPickedUp));
         }
         
-        private void OnItemPickedUp(ItemPickedUpEvent eventData)
+        private void OnItemPickedUp(ItemTriedPickUpEvent eventData)
         {
             var pickedUpItem = eventData.ItemConfig;
-            if (Items.Contains(pickedUpItem))
+            if (AllItems.Contains(pickedUpItem))
             {
                 Debug.Log("Item is already added");
                 return;
             }
-            
-            eventData.Item.gameObject.SetActive(false); // temp
-            
-            Items.Add(pickedUpItem);
-            if (pickedUpItem.GetType() == typeof(WeaponConfig))
+
+            AllItems.Add(pickedUpItem);
+            var isWeapon = pickedUpItem.GetType() == typeof(WeaponConfig);
+            if (isWeapon)
             {
-                _messageBus.Publish(new WeaponPickedUpEvent((WeaponConfig)pickedUpItem));
+                var weaponConfig = (WeaponConfig)pickedUpItem;
+                var weapon = (Weapon)eventData.Item;
+                
+                _messageBus.Publish(new WeaponPickedUpEvent(weaponConfig, weapon));
             }
+            
+            _messageBus.Publish(new ItemPickedUpEvent(pickedUpItem, eventData.Item));
         }
 
         private void OnItemDropped(ItemDroppedEvent eventData)
         {
             var droppedUpItem = eventData.ItemConfig;
-            var item = Items.FirstOrDefault(config => config.Name == droppedUpItem.Name);
-            Items.Remove(item);
+            var item = AllItems.FirstOrDefault(config => config.Name == droppedUpItem.Name);
+            AllItems.Remove(item);
             
             if (droppedUpItem.GetType() == typeof(WeaponConfig))
             {
                 _messageBus.Publish(new WeaponDroppedEvent((WeaponConfig)droppedUpItem));
             }
         }
-
+        
         public void Dispose()
         {
             _subscriptions?.Dispose();

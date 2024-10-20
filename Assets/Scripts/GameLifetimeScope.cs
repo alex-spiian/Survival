@@ -9,10 +9,15 @@ namespace Survival
     {
         [SerializeField]
         private EnemySpawner _enemySpawner;
+
+        [SerializeField]
+        private Player.Player _player;
         
         protected override void Configure(IContainerBuilder builder)
         {
             builder.RegisterInstance(_enemySpawner);
+            builder.RegisterInstance(_player).AsImplementedInterfaces();
+            
             builder.Register<StandaloneInputHandler>(Lifetime.Singleton)
                 .AsImplementedInterfaces();
 
